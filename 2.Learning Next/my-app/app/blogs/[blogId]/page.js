@@ -3,8 +3,11 @@ import { notFound } from "next/navigation";
 
 // if you want to stop generating any other new pages rather than ssg and show 404 error page.
 
-
 export const dynamicParams = false;
+
+// if you have to fetch something and show it on pooling but in the ssg.
+
+export const revalidate = 5;
 
 export async function generateStaticParams() {
     const response = await fetch("https://jsonplaceholder.typicode.com/todos")
@@ -29,6 +32,7 @@ export default async function Blog({ params }) {
     return (
         <>
             <h1 className="text-2xl">Welcome to the Blog {blogId}</h1>
+            <h2>Date: {new Date().toLocaleString()}</h2>
             <h3>Blog is about {blogId} </h3>
             
         </>
