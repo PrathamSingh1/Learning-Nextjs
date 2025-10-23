@@ -1,7 +1,7 @@
 import Link from "next/link";
 import { notFound } from "next/navigation";
 
-// if you want to stop generating any other new pages rather than ssg.
+// if you want to stop generating any other new pages rather than ssg and show 404 error page.
 
 
 export const dynamicParams = false;
