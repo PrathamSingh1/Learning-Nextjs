@@ -6,6 +6,7 @@ import { Suspense } from "react";
 
 
 export default async function Blogs() {
+    
     return (
         <>
             <h3>Blog Page </h3>
@@ -15,15 +16,11 @@ export default async function Blogs() {
             <Link className="bg-gray-300 p-2 ml-5 rounded-[10px]" href="/blogs/3">Blog 3</Link>
             <Link className="bg-gray-300 p-2 ml-5 rounded-[10px]" href="/blogs/4">Blog 4</Link>
             </div>
-            <Suspense fallback={<div>Loading Views...</div>}>
-                <Views />
-            </Suspense>
+          
             <Suspense fallback={<div>Loading Likes...</div>}>
                 <Likes />
             </Suspense>
-            <Suspense fallback={<div>Loading Comments...</div>}>
-                <Comments />
-            </Suspense>
+            
             
         </>
     ) 

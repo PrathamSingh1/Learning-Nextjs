@@ -1,8 +1,16 @@
+"use client"
 
-export default async function Likes() {
-  await new Promise((resolve) => setTimeout(resolve, 6000))
+import { useState } from "react"
 
+export default function Likes() {
+
+  const [likeCount, setLikeCount] = useState(0);
+
+  // console.log(window);
+  // console.log("Hello Like component")
   return (
-    <div>2k Likes</div>
+    <div onClick={() => {
+      setLikeCount((prev) => prev + 1);
+    }}>{likeCount} Likes</div>
   )
 }
