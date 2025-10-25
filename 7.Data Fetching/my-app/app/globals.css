@@ -1,0 +1,17 @@
+@import "tailwindcss";
+
+
+.post-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minman(300px, 1fr));
+    gap: 1rem;
+    padding: 1rem;
+}
+
+.post-card {
+    background-color: var(--secondary-bg);
+    padding: 1rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.2s;
+}
