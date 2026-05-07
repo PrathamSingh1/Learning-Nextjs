@@ -1,0 +1,27 @@
+[
+  {
+    "id": "c18c5717-b96a-4a49-97b2-5f60302d4951",
+    "text": "Learning Next js",
+    "completed": true
+  },
+  {
+    "id": "37d98745-71af-4efb-b1f0-818e0f02a55c",
+    "text": "Learning Css for developers",
+    "completed": false
+  },
+  {
+    "id": "31c9fcaf-094d-48bc-bca4-fbbc6f6db9d9",
+    "text": "Learning Joy of React",
+    "completed": false
+  },
+  {
+    "id": "9cefa64e-e851-4571-b17b-7d1e1291c90f",
+    "text": "Learning Figma Design",
+    "completed": false
+  },
+  {
+    "id": "66869ee8-9a6c-4ea8-b0e0-90a036580576",
+    "text": "Learning Integrating",
+    "completed": false
+  }
+]
